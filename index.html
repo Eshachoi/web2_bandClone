@@ -1,13 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Band Clone</title>
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/26136d9ff7.js" crossorigin="anonymous"></script>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px ;
+            background-color: #f6f8fa;
+            position: relative;
+            width: 1875px;
+            height: 68px;
+        }
+
+        .logo_img {
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 80px;
+            height: 40px;
+        }
+
+        .logo_img img {
+            width: 100%;
+            height: 100%;
+        }
+        .btn_box {
+            position: absolute;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            width: 300px;
+            height: 35px;
+        }
+
+        .btn_lang {
+            display: flex;
+            align-items: center;
+            padding: 0 13px 0 0;
+            color: #777;
+            width: 100px;
+            height: 17px;
+            font-size: 13px;
+        }
+        .btn_join {
+            padding: 0 0 0 30px;
+            color: #777;
+            width: 100px;
+            height: 20px;
+            font-size: 14px;
+            font-family: appleSDGothicNeo, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', '맑은고딕', 'NanumGothic', '나눔고딕', sans-serif;
+        }
+        .btn_login {
+            padding: 0 23px;
+            margin: 0 0 0 29px;
+            width: 83px;
+            height: 35px;
+            background-color: #21c531;
+            text-align: center;
+            align-items: center;
+            color: #fff;
+            border-radius: 2px;
+            font-size: 14px;
+            line-height: 35px;
+            
+            
+        }
+            </style>
 </head>
 <body>
-    <div>
-        안녕하세요
-    </div>
+    
+    <nav>
+        <div class="logo_img">
+            <img src="flat_logo.svg" alt="밴드로고이미지">
+        </div>
+        <div class="btn_box">
+           <div class="btn_lang">
+            한국어
+            <i class="fa-solid fa-caret-down"></i>
+           </div>
+           <div class="btn_join">
+              <a href="#"></a>회원가입</div>
+           <div class="btn_login">로그인</div>
+        </div>
+    </nav>
+
+    <header>
+        <figure >
+            <img src="" alt="핸드폰화면 모양 이미지">
+        </figure>
+        
+        <h1>
+            모임이 쉬워진다
+            <br>
+            우리끼리 밴드
+        </h1>
+
+        <h3>당신의 모임도 BAND로 시작하세요.</h3>
+
+        <div class="button">로그인</div>
+        <div class="button">회원가입</div>
+
+        <p>
+            내게 맞는 밴드를 만나려면
+            <a href="#">밴드 찾기</a>
+        </p>
+        <p>
+            모임별 밴드 활용법
+            <a href="#">밴드 가이드 보기</a>
+        </p>
+        <p>
+            만 13세 미만이라면? 
+            <a href="#">'밴드 키즈' 알아보기</a>
+        </p>
+
+       </header>
+
+       <section class="banner">
+            <h1>모임을 위한 공간, 밴드</h1>
+            <br>
+            <br>
+            <p>
+                밴드는 그룹 멤버와 함께 하는 공간입니다. 
+                동호회, 스터디, 주제별 모임을 밴드로 시작하세요. 
+            </p>
+
+       <ul class="features">
+            <li class="img_box">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <h2>어떤 모임이라도!</h2>
+                <p>
+                    친구, 가족, 동료 등 함께 하고 싶은 사람과
+                    <br>
+                    우리만의 공간을 만들어보세요. 
+                </p>
+            </li>
+        </ul>
+            
+        <ul class="features">
+            <li class="img_box">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <h2>모임에 딱 맞는 기능들</h2>
+                <p>
+                    투표로 의견을 모으고, 함께 일정을 공유하며
+                    <br>
+                    게시판과 앨범에는 추억을 쌓아보세요. 
+                </p>
+            </li>
+        </ul>
+        <ul class="features">
+            <li class="img_box">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <h2>내가 원하는 모임 찾기</h2>
+                <p>
+                    취미, 스포츠, 또래 모임 등
+                    <br>
+                    나와 같은 관심사 밴드를 찾을 수 있어요. 
+                </p>
+            </li>
+        </ul>
+       
+       <section>
+            <ul>
+                <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                <li>
+                       <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                
+                <li>
+                      <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                
+                <li>
+                       <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                
+                <li>
+                       <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                
+                <li>
+                       <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                
+                <li>
+                       <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                
+                <li>
+                       <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                
+                <li>
+   <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+
+                </li>
+                
+                <li>
+                       <li>
+                    <h3>천문학, 우주를 사랑하는 사람들</h3>
+                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                       <br>
+                       멤버 10,547   리더 공유결합 ^^
+                    </p>
+                    <button>천문학 밴드 더보기 ></button>
+                </li>
+                
+            </ul>
+            </article>
+       </section>
+        <body>
+            
+        </body>
+        </html></h1>
+    </header>
 </body>
 </html>
