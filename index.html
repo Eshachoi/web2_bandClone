@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Band Clone</title>
-    <link rel="stylesheet" href="reset.css">
+   
     <script src="https://kit.fontawesome.com/26136d9ff7.js" crossorigin="anonymous"></script>
     <style>
+      
         nav {
             display: flex;
             justify-content: space-between;
@@ -14,7 +15,7 @@
             padding: 10px 20px ;
             background-color: #f6f8fa;
             position: relative;
-            width: 1875px;
+            width: 100%;
             height: 68px;
         }
 
@@ -31,9 +32,10 @@
         }
         .btn_box {
             position: absolute;
-            right: 30px;
+            right: 60px;
             display: flex;
             align-items: center;
+            text-align: center;
             width: 300px;
             height: 35px;
         }
@@ -44,15 +46,16 @@
             padding: 0 13px 0 0;
             color: #777;
             width: 100px;
-            height: 17px;
+            height: 35px;
             font-size: 13px;
         }
         .btn_join {
             padding: 0 0 0 30px;
             color: #777;
             width: 100px;
-            height: 20px;
+            height: 35px;
             font-size: 14px;
+            line-height: 35px;
             font-family: appleSDGothicNeo, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', '맑은고딕', 'NanumGothic', '나눔고딕', sans-serif;
         }
         .btn_login {
@@ -67,12 +70,232 @@
             border-radius: 2px;
             font-size: 14px;
             line-height: 35px;
-            
-            
         }
-            </style>
-</head>
-<body>
+        
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        background-color: #f6f8fa;
+    }
+
+    .img_box {
+        width: 540px;
+        height: 695px;
+        background-image: url(bg_sloganImg.jpg) ;
+        background-size: cover;
+        background-position: center;
+    }
+    .text_box {
+        width: 340px;
+        height: 462px; 
+    }
+    .text_box h1 {
+        font-size: 48px;
+    }
+    .text_box h3 {
+        font-size: 18px;
+        color: #222;
+        font-weight: normal;
+    }
+    .login_btn {
+        width: 240px;
+        height: 54px;
+        background-color: #21c531;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 54px;
+    }
+    .join_btn {
+        width: 240px;
+        height: 54px;
+        background-color: #fff;
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+        line-height: 54px;
+        margin: 12px 0 0;
+        border: 1px solid #ebebeb;
+    }
+    .text_box p {
+        font-size: 14px;
+        color: #222;
+        
+    }
+    .text_box a {
+        color: #21c531;
+    }
+
+
+    .banner {
+        width: 100%;
+        height: 540px;
+        position: relative;
+        background: url(bg_intro.jpg) no-repeat center center;
+    }
+
+    .img_container {
+        width: 100%;
+        height: 540px;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .text_overlay {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        color: #fff;
+        font-size: 36px;
+        text-align: center;
+        z-index: 1;
+        font-size: 40px;
+    }
+    .text_overlay_2 {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        z-index: 1;
+        font-size: 18px;
+    }
+
+    article {
+        display: flex;
+        background: #fff;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+       
+    }
+    .intro_list {
+        display: flex;
+        list-style: none;
+        padding: 20px;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .img_container {
+       width: 300px;
+       height: 160px;
+       overflow: hidden;        
+       border-radius: 15px;  
+    }
+    .img_container .img01,
+    .img_container .img02,
+    .img_container .img03 {
+       width: 100%;
+       height: 100%;
+       object-fit: fill;
+       display: block;
+        
+    }
+    .intro_list li {
+        margin-bottom: 20px;
+    }
+
+    .intro_list h2 {
+        color: #222;
+        font-size: 20px;
+
+    }
+    .intro_list p {
+        color: #777;
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 6px 0 0;
+    }
+    
+    .band_nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .band_nav h2 {
+        font-size: 30px;
+        margin-left: 40px;
+        color: #222;
+        font-weight: 400;
+        padding-left: 400px;
+    }
+    .band_nav div {
+        display: flex;
+        align-items: center;
+        padding-right: 400px;
+        color: #222;
+    }
+    .band_nav i {
+        margin-left: 8px;
+    }
+    .photo_list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-width: 1000px;
+    }
+    .intro_list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5열 만들기 */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.photo_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ✅ 2열 구성 */
+  gap: 20px; /* 항목 사이 간격 */
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1100px; /* 원하는 최대 너비 */
+}
+
+.photo_list li {
+  width: 100px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row
+}
+.thumb  img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text h3 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+.text p {
+    font_size 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+.text_button {
+    align-self: start;
+    padding: 6px 12px;
+    background-color: #ebebeb;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+   </style>
+
+   </head>
+<body> 
     
     <nav>
         <div class="logo_img">
@@ -89,186 +312,247 @@
         </div>
     </nav>
 
-    <header>
-        <figure >
-            <img src="" alt="핸드폰화면 모양 이미지">
-        </figure>
-        
-        <h1>
-            모임이 쉬워진다
-            <br>
-            우리끼리 밴드
-        </h1>
+    <section class="main">
+        <div class="img_box"></div>
+        <div class="text_box">
+            <h1>
+                모임이 쉬워진다
+                <br>
+                우리끼리 밴드
+            </h1>
 
-        <h3>당신의 모임도 BAND로 시작하세요.</h3>
+            <h3>당신의 모임도 BAND로 시작하세요.</h3>
 
-        <div class="button">로그인</div>
-        <div class="button">회원가입</div>
+            <div class="login_btn">로그인</div>
+            <div class="join_btn">회원가입</div>
 
-        <p>
-            내게 맞는 밴드를 만나려면
-            <a href="#">밴드 찾기</a>
-        </p>
-        <p>
-            모임별 밴드 활용법
-            <a href="#">밴드 가이드 보기</a>
-        </p>
-        <p>
-            만 13세 미만이라면? 
-            <a href="#">'밴드 키즈' 알아보기</a>
-        </p>
+            <p>
+                내게 맞는 밴드를 만나려면
+                <a href="#">밴드 찾기</a>
+            </p>
+            <p>
+                모임별 밴드 활용법
+                <a href="#">밴드 가이드 보기</a>
+            </p>
+            <p>
+                만 13세 미만이라면? 
+                <a href="#">'밴드 키즈' 알아보기</a>
+            </p>
+        </div>
 
-       </header>
+    </section>
 
        <section class="banner">
-            <h1>모임을 위한 공간, 밴드</h1>
-            <br>
-            <br>
-            <p>
+            <div class="img_container">
+                <img src="bg_intro.jpg" alt="다섯 사람이 모여 앉아 대화하며 웃는 모습">
+            </div>
+            <span>    
+                <h1 class="text_overlay">모임을 위한 공간, 밴드</h1>
+                <br>
+                <br>
+                <p class="text_overlay_2">
                 밴드는 그룹 멤버와 함께 하는 공간입니다. 
+                <br>
+                <br>
                 동호회, 스터디, 주제별 모임을 밴드로 시작하세요. 
-            </p>
-
-       <ul class="features">
-            <li class="img_box">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <h2>어떤 모임이라도!</h2>
-                <p>
-                    친구, 가족, 동료 등 함께 하고 싶은 사람과
-                    <br>
-                    우리만의 공간을 만들어보세요. 
                 </p>
-            </li>
-        </ul>
+            </span>
+        </section>
+        
+        <article>
+            <ul class="intro_list">
+                <li class="img_01">
+                    <div class="img_container">
+                        <img src="img_seo01.jpg" alt="">
+                    </div>
+                    <h2>어떤 모임이라도!</h2>
+                     <p>
+                       친구, 가족, 동료 등 함께 하고 싶은 사람과
+                         <br>
+                         우리만의 공간을 만들어보세요. 
+                    </p>
+                </li>
+            </ul>
             
-        <ul class="features">
-            <li class="img_box">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <h2>모임에 딱 맞는 기능들</h2>
-                <p>
-                    투표로 의견을 모으고, 함께 일정을 공유하며
-                    <br>
-                    게시판과 앨범에는 추억을 쌓아보세요. 
-                </p>
-            </li>
-        </ul>
-        <ul class="features">
-            <li class="img_box">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <h2>내가 원하는 모임 찾기</h2>
-                <p>
-                    취미, 스포츠, 또래 모임 등
-                    <br>
-                    나와 같은 관심사 밴드를 찾을 수 있어요. 
-                </p>
-            </li>
-        </ul>
+            <ul class="intro_list"> 
+                <li class="img_02">
+                     <div class="img_container">
+                        <img src="img_seo02.jpg" alt="">
+                    </div>
+                    <h2>모임에 딱 맞는 기능들</h2>
+                    <p>
+                        투표로 의견을 모으고, 함께 일정을 공유하며
+                         <br>
+                         게시판과 앨범에는 추억을 쌓아보세요. 
+                     </p>
+                </li>
+             </ul>
+            <ul class="intro_list">
+                <li class="img_03">
+                    <div class="img_container">
+                       <img src="img_seo03.jpg" alt="">
+                     </div>
+                    <h2>내가 원하는 모임 찾기</h2>
+                    <p>
+                        취미, 스포츠, 또래 모임 등
+                        <br>
+                        나와 같은 관심사 밴드를 찾을 수 있어요. 
+                    </p>
+                </li>
+            </ul>
+        </article>
        
-       <section>
-            <ul>
+        <section class="band_area">
+            <nav class="band_nav">  
+                <h2>
+                이런 밴드는 어때요
+                </h2>
+                <div>
+                    모두보기
+                    <i class="fa-solid fa-angle-right"></i></i>
+                </div>
+            </nav>  
+              
+            
+            <ul class="photo_list">
                 <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
-                </li>
-                <li>
-                       <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
-                </li>
-                
-                <li>
-                      <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
                 </li>
                 
                 <li>
-                       <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
                 </li>
-                
-                <li>
-                       <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
-                </li>
-                
-                <li>
-                       <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
-                </li>
-                
-                <li>
-                       <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
-                </li>
-                
-                <li>
-                       <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
-                </li>
-                
-                <li>
-   <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
 
-                </li>
-                
                 <li>
-                       <li>
-                    <h3>천문학, 우주를 사랑하는 사람들</h3>
-                    <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
-                       <br>
-                       멤버 10,547   리더 공유결합 ^^
-                    </p>
-                    <button>천문학 밴드 더보기 ></button>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="thumb">
+                        <img src="sky.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>천문학, 우주를 사랑하는 사람들</h3>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다
+                           <br>
+                           멤버 10,547   리더 공유결합 ^^
+                        </p>
+                        <button>천문학 밴드 더보기 ></button>
+                    </div>
                 </li>
                 
             </ul>
