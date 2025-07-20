@@ -171,7 +171,7 @@
         background: #fff;
         align-items: center;
         justify-content: center;
-        padding: 50px 0;
+        padding: 50px 320px;
        
     }
     .intro_list {
@@ -212,6 +212,10 @@
         margin: 6px 0 0;
     }
     
+    .band_area {
+        background-color: #f9f9f9;
+    }
+
     .band_nav {
         display: flex;
         justify-content: space-between;
@@ -234,64 +238,139 @@
     }
     .photo_list {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         list-style: none;
-        padding: 0;
+        padding: 24px 450px ;
         margin: 0;
         max-width: 1000px;
+        
     }
-    .intro_list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5열 만들기 */
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1500px;
-}
+   
+    .photo_list li {
+      width: 500px;
+      height: 102px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
 
-.photo_list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* ✅ 2열 구성 */
-  gap: 20px; /* 항목 사이 간격 */
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1100px; /* 원하는 최대 너비 */
-}
+    .thumb  img {
+        width: 100px;
+        height: 102px;
+        display: block;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    .text {
+        flex: 1;
+    }
+    .text h3 {
+        font-size: 15px;
+        margin: 0;
+        
 
-.photo_list li {
-  width: 100px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 16px;
-  display: flex;
-  flex-direction: row
-}
-.thumb  img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.text h3 {
-    font-size: 18px;
-    margin: 0 0 8px 0;
-}
-.text p {
-    font_size 14px;
-    color: #555;
-    margin-bottom: 12px;
-}
-.text_button {
-    align-self: start;
-    padding: 6px 12px;
-    background-color: #ebebeb;
-    color: #000;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
+    }
+    .text p {
+        font-size: 12px;
+        color: #555;
+        margin: 8px 0;
+    }
+    .text_button {
+        align-self: start;
+        border: none;
+        background: #fff;
+        box-shadow: 0 2px 6px rgba (0,0,0,0.1);
+        padding: 10px 16px;
+        font-size: 13px;
+        border-color: #ebebeb;
+        border-radius: 20%;
+        cursor: pointer;
+    }
+    .text_button strong {
+        color: #000;
+    }
+
+    .app_download_area {
+        display: flex;
+        align-items:flex-start;
+        width: 1876px;
+        height: 133px;
+        padding: 30px 0 33px;
+        background-color: #fff;
+    }
+    .icon_band {
+        width: 70px;
+        height: 70px;
+        margin-left: 450px;
+        margin-right: 20px;
+    }
+    .download_text_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: left;
+        margin-top: 10px;
+        margin-right: 350px;
+        
+    }
+    .download_text_box h2 {
+        font-size: 23px;
+        font-weight: 500;
+        color: #222;
+        margin: 0;
+    }
+    .download_text_box p {
+        font-size: 14px;
+        color: #666;
+        margin: 4px 0 0;
+    }
+    .go_1, .go_2 {
+        display: flex;
+        margin-right: 15px;
+    }
+
+
+    footer {
+        background-color: #222;
+        padding: 20px 0;
+    }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 12px;
+        list-style: none;
+        width: 1000px;
+        height: 52px; 
+        border: none;
+        text-align: center;
+        margin-left: 450px;
+        padding: 0;
+
+    }
+    .item {
+        font-size: 13px;
+        color: #888;
+    }
+    ._copyright {
+        margin-top: 20px;
+        margin-left: 450px;
+        color: #888;
+        font-size: 14px;
+    }
+    .item::after {
+        content: '·';
+        margin: 0 12px;
+    }
+    .item:last-child::after {
+        content: "";
+    }
+    h3 ._copyright {
+        display: flex;
+        flex-direction: row;
+    }
    </style>
 
    </head>
@@ -425,7 +504,7 @@
                            <br>
                            멤버 10,547   리더 공유결합 ^^
                         </p>
-                        <button>천문학 밴드 더보기 ></button>
+                        <button><strong>천문학</strong> 밴드 더보기 ></button>
                     </div>
                 </li>
                 
@@ -558,10 +637,43 @@
             </ul>
             </article>
        </section>
-        <body>
-            
-        </body>
-        </html></h1>
-    </header>
+
+       <section class="app_download_area">
+            <div class="icon_band">
+                <img src="ico-band (1).svg" alt="">
+            </div>
+            <div class="download_text_box">
+                <h2>밴드앱을 다운로드 하세요!</h2>
+                <p>당신의 모임도 BAND로 시작하세요.</p>
+            </div>
+            <div class="go_1">
+                <img src="button-android.svg" alt="">
+            </div>
+            <div class="go_2">
+                <img src="button-ios.svg" alt="">
+            </div>
+
+       </section>
+        
 </body>
+<footer>
+    <ul class="list">
+        <li class="item">블로그</li>
+        <li class="item">공지사항</li>
+        <li class="item">스티커제안</li>
+        <li class="item">광고</li>
+        <li class="item">이용약관</li>
+        <li class="item"><strong>개인정보처리방침</strong></li>
+        <li class="item">쿠키설정</li>
+        <li class="item">CCPA 개인 정보 관리</li>
+        <li class="item">맞춤형 광고 안내</li>
+        <li class="item">청소년 보호를 위한 노력</li>
+        <li class="item">활동정책</li>
+        <li class="item">권리침해 신고안내</li>
+        <li class="item">개발자</li>
+        <li class="item">도움말</li>
+    </ul>
+    <h3 class="_copyright">BANDⓒ2025</h3>
+    
+</footer>
 </html>
